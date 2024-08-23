@@ -1,0 +1,60 @@
+.header {
+  margin: 0 2.5rem;
+  padding: 0.5rem 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerLeft,
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+
+a > span {
+  margin: 0 30px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: white;
+}
+
+a > span:hover {
+  color: red;
+}
+
+.header__icon {
+  width: 80px;
+  cursor: pointer;
+}
+
+.user__avatar {
+  font-size: 2rem;
+}
+
+.input-button {
+  padding: 8px 10px;
+  background-color: #d0dbe8;
+  color: #3e3939;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-button:hover {
+  background-color: #cacdd1;
+}
+
+.search-button {
+  padding: 8px 8px;
+  margin-left: 4px;
+  background-color: #d0dbe8;
+  color: #181616;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #597690;
+}
