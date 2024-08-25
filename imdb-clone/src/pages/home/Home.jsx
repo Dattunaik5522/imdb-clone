@@ -6,6 +6,7 @@ import { Carousel } from "react-responsive-carousel";
 // import "./Home.css";
 import "./Home.css";
 import { Link } from "react-router-dom";
+import Movielist from "../../components/movieList/Movielist";
 
 // let imageStyle = {
 //   display: "flex",
@@ -88,6 +89,7 @@ const Home = () => {
             </Link>
           ))}
         </Carousel>
+        <Movielist />
       </div>
     </>
   );

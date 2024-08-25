@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Home from "./pages/home/Home";
+import Card from "./components/card/Card";
+import Movielist from "./components/movieList/Movielist";
 
 function App() {
   // const [MovieData, setMovieData] = useState([]);
@@ -30,12 +32,9 @@ function App() {
             <Route index element={<Home />}></Route>
             <Route
               path="movie/:id"
-              element={<h1>Movie details page</h1>}
+              element={<h1>Movie detail page</h1>}
             ></Route>
-            <Route
-              path="movies/:type"
-              element={<h1>Movie list page</h1>}
-            ></Route>
+            <Route path="movies/:type" element={<Movielist />}></Route>
             <Route path="/*" element={<h1>Error page</h1>}></Route>
           </Routes>
         </Router>
